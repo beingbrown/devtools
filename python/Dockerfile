@@ -1,4 +1,5 @@
-from alpine:latest
+ARG VERSION=latest
+from alpine:$VERSION
 
 RUN apk add --update python
 RUN mkdir /script
